@@ -16,6 +16,10 @@ This application is a tool developed using kivy framework's tool KvViewer. I've 
 3. Run the application by executing the `main.py` (or whatever your main file name is) script with Python.
 4. Write your KV code in the left text field. The result will be displayed on the right side of the screen.
 
+## Credits
+
+This project was built using the [Kivy](https://kivy.org/#home) open source Python library for developing multitouch applications. It's a community project and wouldn't exist without the support and dedication of many individuals. I'd like to thank the Kivy community for their valuable contributions and for making such a powerful tool available to developers.
+
 ## Example
 
 ```python
@@ -63,7 +67,5 @@ class KvApp(App):
 if __name__ == '__main__':
     KvApp().run()
 
-## Credits
 
-This project was built using the [Kivy](https://kivy.org/#home) open source Python library for developing multitouch applications. It's a community project and wouldn't exist without the support and dedication of many individuals. I'd like to thank the Kivy community for their valuable contributions and for making such a powerful tool available to developers.
 
