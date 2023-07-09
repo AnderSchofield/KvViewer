@@ -62,3 +62,8 @@ class KvApp(App):
 
 if __name__ == '__main__':
     KvApp().run()
+
+## Credits
+
+This project was built using the [Kivy](https://kivy.org/#home) open source Python library for developing multitouch applications. It's a community project and wouldn't exist without the support and dedication of many individuals. I'd like to thank the Kivy community for their valuable contributions and for making such a powerful tool available to developers.
+
