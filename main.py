@@ -6,9 +6,11 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.label import Label
 from kivy.core.window import Window
 
+
 class KvApp(App):
+
     def build(self):
-        # Set the window size to 1200x800 pixels
+        """Build the root widget."""
         Window.size = (1200, 800)
 
         self.root = BoxLayout(orientation='horizontal')
@@ -24,19 +26,18 @@ class KvApp(App):
 
         return self.root
 
-
-# ... in the KvViewerApp class ...
-
-    def update(self, instance, value)
+    def update(self, instance, value):
+        """Update the KV display widget when the TextInput changes."""
         self.root.remove_widget(self.kv_display)
         try:
-            # Use textwrap.dedent on value to remove any common leading whitespace
+            # Use textwrap.dedent on value to remove any indentation
             self.kv_display = Builder.load_string(textwrap.dedent(value))
             self.kv_display.size_hint_x = 0.5
             self.root.add_widget(self.kv_display)
         except Exception as e:
             self.kv_display = Label(text=str(e), size_hint_x=0.5)
             self.root.add_widget(self.kv_display)
+
 
 if __name__ == '__main__':
     KvApp().run()
